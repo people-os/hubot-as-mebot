@@ -7,24 +7,15 @@
   "dependencies": {
     "coffee-script": "1.6.3",
     "hubot": "^2.19.0",
-    "hubot-annoying-song": "^0.x",
-    "hubot-diagnostics": "0.0.1",
     "hubot-flowdock-attend-own-account": "^0.7.7",
     "hubot-gitter2": "^0.1.3",
     "hubot-gitter-echo": "^0.x",
-    "hubot-google-images": "^0.2.6",
-    "hubot-google-translate": "^0.2.0",
-    "hubot-help": "^0.2.0",
-    "hubot-heroku-keepalive": "^1.0.2",
     "hubot-ignore-by-prefix": "^0.x",
     "hubot-ignore-own-output": "^0.x",
-    "hubot-maps": "0.0.2",
-    "hubot-pugme": "^0.1.0",
     "hubot-redis-brain": "0.0.3",
     "hubot-room-select": "^0.x",
     "hubot-rules": "^0.1.1",
-    "hubot-scripts": "^2.17.2",
-    "hubot-shipit": "^0.2.0"
+    "hubot-scripts": "^2.17.2"
   },
   "devDependencies": {
     "resin-lint": "^1.4.0",
