@@ -37,7 +37,7 @@
     "chai": "~2.1.0"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "^6.x"
   },
   "main": "index.js",
   "bin": "./bin/hubot",
@@ -47,6 +47,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "./bin/hubot -n $HUBOT_NAME -a flowdock-attend-own-account",
     "test": " "
   },
   "repository": {
