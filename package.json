@@ -40,6 +40,7 @@
     "node": "0.10.x"
   },
   "main": "index.js",
+  "bin": "./bin/hubot",
   "directories": {
     "doc": "docs",
     "example": "examples",
