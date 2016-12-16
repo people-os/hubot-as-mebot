@@ -30,6 +30,7 @@ COPY . ./
 
 # Enable systemd init system in container
 ENV INITSYSTEM on
+ENV NODE_ENV production
 ENV HUBOT_FLOWDOCK_LISTEN_TO_SELF 1
 ENV HUBOT_IGNORE_PREFIX :
 ENV HUBOT_GITTER_ROOM resin-io/chat
