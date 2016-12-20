@@ -1,1 +1,1 @@
-web: bin/hubot -a flowdock
+worker: export HUBOT_FLOWDOCK_LISTEN_TO_SELF=1 && if [ -z ${HUBOT_IGNORE_PREFIX+x} ]; then export HUBOT_IGNORE_PREFIX=£; fi && if [ -z ${HUBOT_GITTER_ROOM+x} ]; then export HUBOT_GITTER_ROOM=resin-io/chat; fi && if [ -z ${HUBOT_MONITOR_ROOM+x} ]; then export HUBOT_MONITOR_ROOM=3febc696-3aaf-4a83-9ddd-3a267abf4212; fi && bin/hubot -n $HUBOT_NAME -a flowdock-attend-own-account
