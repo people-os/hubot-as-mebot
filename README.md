@@ -20,28 +20,20 @@ streamlining.
 
 ## Installation
 
-### Windows
-
-1. Get node.js
-    1. I use whatever the latest v6.x.x is.
-    2. Plenty of guides exist for this, I'm not going to replicate or
-       recommend.
-2. `npm install hubot-as-mebot --production`
-    1. Create &amp; go to an empty directory to install into
-    2. Run the above command
-3. Set up environment
-    1. Read the Environment Variables section of this document
-    2. Configure the Environment variables however you wish
-    3. I quite like using `SET` commands in a .bat file for this
-4. Run bin\hubot -n %HUBOT_NAME% -a flowdock-attend-own-account
-    1. I quite like using a `CALL` in the .bat file for this
-
 ### Resin.io
 
-1. get an app
-2. set up environment
-3. clone the repo
-4. push the repo
+1. Get an app &amp; device
+    1. Create a new application in [https://resin.io](resin.io) targeted for
+       your hardware
+    2. Download ResinOS, flash and boot to make your IoT device cloud
+       manageable
+2. Set up environment
+    1. Read the Environment Variables section of this document
+    2. Use the Environment Variables page of your application or device
+3. Deploy the repo
+    1. `git clone https://github.com/resin-io/hubot-as-mebot` then `cd` into it
+    2. Add the remote using the provided command in the top right of resin.io
+    3. `git push resin` &amp; see the unicorn
 
 ### Heroku
 
@@ -55,7 +47,7 @@ streamlining.
 3. Fork the repo
     1. This is optional if you have access to an organisation that has already
        forked this repo (eg resin.io)
-    1. Fork [https://github.com/resin-io/hubot-as-mebot](github.com/resin-io/hubot-as-mebot)
+    2. Fork [hubot-as-mebot](https://github.com/resin-io/hubot-as-mebot)
 3. Link the repo
     1. Visit the deploy Tab on Heroku
     2. Enable Automatic deploys from the master branch
@@ -66,6 +58,23 @@ streamlining.
 5. Restart, just in case
     1. My experience is that once this is all set up it's best to restart
     2. Using the More dropdown (top right) restart all Dynos
+
+### Windows
+
+*This section needs work, but this should not be a blocker.*
+
+1. Get node.js
+    1. I use whatever the latest ^6.x is.
+    2. Plenty of guides exist for this, I'm not going to replicate or
+       recommend.
+2. `npm install hubot-as-mebot --production`
+    1. Create &amp; go to an empty directory to install into
+    2. Run the above command
+3. Set up environment
+    1. Read the Environment Variables section of this document
+    2. I quite like using `SET` commands in a .bat file for this
+4. Run bin/hubot
+    1. I quite like using a `CALL` in the .bat file for this
 
 ### Environment Variables
 
