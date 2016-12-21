@@ -69,8 +69,6 @@ going to have to take over the review and deploy yourself:
 
 ### Windows
 
-*This section needs work, but this should not be a blocker.*
-
 1. Get node.js
     1. I use whatever the latest ^6.x is.
     2. Plenty of guides exist for this, I'm not going to replicate or
