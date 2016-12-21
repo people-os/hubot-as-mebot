@@ -102,8 +102,8 @@ going to have to take over the review and deploy yourself:
   defaults to `£`.
 * `HUBOT_MONITOR_ROOM` - ID of the Flowdock flow to replicate from, currently
   awkward to access.  The utility command 'monitor log' will put this to the
-  robot logger. eg `bed6fa5a-6a31-4a31-9b3b-9184b158c2b8` (r/sandbox). This defaults to
-  `3febc696-3aaf-4a83-9ddd-3a267abf4212` (public/chat).
+  robot logger. eg `bed6fa5a-6a31-4a31-9b3b-9184b158c2b8` (r/sandbox). This
+  defaults to `3febc696-3aaf-4a83-9ddd-3a267abf4212` (public/chat).
 * `HUBOT_NAME` - Set to your own nickname in Flowdock. Tells Hubot what account
   it is using. eg `sqweelygig`.
 
