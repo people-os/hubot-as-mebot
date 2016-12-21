@@ -45,19 +45,27 @@ streamlining.
     2. Visit the settings tab of Heroku
     2. Use the Config Variables section on Heroku to configure how you wish
 3. Fork the repo
-    1. This is optional if you have access to an organisation that has already
-       forked this repo (eg resin.io)
+    1. This is optional if you have access to and trust an organisation that
+       has already forked this repo (eg resin.io)
     2. Fork [hubot-as-mebot](https://github.com/resin-io/hubot-as-mebot)
-3. Link the repo
+4. Link the repo
     1. Visit the deploy Tab on Heroku
     2. Enable Automatic deploys from the master branch
-4. Activate the worker
+5. Activate the worker
     1. Visit the resources tab on Heroku
     2. Edit the web Dyno so it is not running
     3. Edit the worker Dyno so it is running
-5. Restart, just in case
+6. Restart, just in case
     1. My experience is that once this is all set up it's best to restart
     2. Using the More dropdown (top right) restart all Dynos
+
+#### Deployment without Trust
+
+So, you don't trust the repo maintainers and want to follow the principle of
+least privilege. Good for you. You've got two easy options, either way you're
+going to have to take over the review and deploy yourself:
+* Create and maintain your own Fork in step (3). More work, more secure.
+* Leave deployment as manual in step (4). Less work, less secure.
 
 ### Windows
 
@@ -67,14 +75,15 @@ streamlining.
     1. I use whatever the latest ^6.x is.
     2. Plenty of guides exist for this, I'm not going to replicate or
        recommend.
-2. `npm install hubot-as-mebot --production`
-    1. Create &amp; go to an empty directory to install into
-    2. Run the above command
+2. Clone the repo
+    1. `git clone https://github.com/resin-io/hubot-as-mebot`
 3. Set up environment
     1. Read the Environment Variables section of this document
     2. I quite like using `SET` commands in a .bat file for this
-4. Run bin/hubot
-    1. I quite like using a `CALL` in the .bat file for this
+4. Run the code
+    1. `cd` into the code directory
+    2. `npm run windows`
+    3. I quite like using a `CALL` in the .bat file for this
 
 ### Environment Variables
 

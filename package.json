@@ -39,6 +39,7 @@
   },
   "scripts": {
     "start": "./bin/hubot -n $HUBOT_NAME -a flowdock-attend-own-account",
+    "windows": ".\\bin\\hubot -n %HUBOT_NAME% -a flowdock-attend-own-account",
     "test": " "
   },
   "repository": {
